@@ -14,31 +14,33 @@
   --color-accent-foreground: var(--accent-foreground);
 
   --color-ink: var(--ink);
+  --color-ink-elev: var(--ink-elev);
   --color-ink-foreground: var(--ink-foreground);
   --color-ink-muted: var(--ink-muted);
   --color-ink-border: var(--ink-border);
 
-  --radius-base: 0.375rem;
+  --radius-base: 0.5rem;
 }
 
 :root {
-  /* Light — mostly light surfaces */
-  --background: #fafafa;
-  --foreground: #14161a;
+  /* Light — clean, cool-neutral surfaces */
+  --background: #f6f7f8;
+  --foreground: #101317;
   --surface: #ffffff;
-  --muted: #f1f2f4;
-  --muted-foreground: #6b7178;
-  --border: #e4e6ea;
+  --muted: #eef0f2;
+  --muted-foreground: #656b73;
+  --border: #e2e5e9;
 
   /* Restrained blue accent */
   --accent: #389ac4;
   --accent-foreground: #ffffff;
 
-  /* Dark section palette (near-black) */
-  --ink: #0e1116;
-  --ink-foreground: #f4f5f6;
-  --ink-muted: #9aa0a8;
-  --ink-border: #24272e;
+  /* Dark section palette — deep charcoal-navy */
+  --ink: #0a0e14;
+  --ink-elev: #10151d;
+  --ink-foreground: #f3f5f7;
+  --ink-muted: #8a929e;
+  --ink-border: #1c222c;
 }
 
 * {
@@ -58,7 +60,7 @@ body {
 }
 
 ::selection {
-  background-color: color-mix(in srgb, var(--accent) 22%, transparent);
+  background-color: color-mix(in srgb, var(--accent) 26%, transparent);
   color: var(--foreground);
 }
 
@@ -66,8 +68,80 @@ body {
 .label-mono {
   font-family: var(--font-mono);
   font-size: 0.6875rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
+}
+
+/* Oversized display heading — tight, weighty */
+.display {
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+  font-weight: 700;
+}
+
+/* Faint technical grid — used as a section backdrop via ::before helpers */
+.grid-lines-light {
+  background-image: linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+}
+.grid-lines-dark {
+  background-image: linear-gradient(to right, var(--ink-border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--ink-border) 1px, transparent 1px);
+}
+
+/* Traveling glow along a connection line */
+.flow-x {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in srgb, var(--accent) 85%, transparent) 50%,
+    transparent 100%
+  );
+  background-size: 45% 100%;
+  background-repeat: no-repeat;
+  animation: flow-x 3.2s linear infinite;
+}
+.flow-y {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    color-mix(in srgb, var(--accent) 85%, transparent) 50%,
+    transparent 100%
+  );
+  background-size: 100% 42%;
+  background-repeat: no-repeat;
+  animation: flow-y 3s linear infinite;
+}
+
+@keyframes flow-x {
+  0% {
+    background-position: -45% 0;
+  }
+  100% {
+    background-position: 145% 0;
+  }
+}
+@keyframes flow-y {
+  0% {
+    background-position: 0 -45%;
+  }
+  100% {
+    background-position: 0 145%;
+  }
+}
+
+/* Soft pulse for active nodes */
+.node-pulse {
+  animation: node-pulse 2.4s ease-in-out infinite;
+}
+@keyframes node-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 55%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 0%, transparent);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -92,12 +166,12 @@ body {
 @media (prefers-reduced-motion: no-preference) {
   .reveal.reveal-armed {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(18px);
   }
   .reveal.reveal-in {
     opacity: 1;
     transform: none;
-    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
   }
 }
