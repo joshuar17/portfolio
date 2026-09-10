@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Hunter System — Joshua Romero</title>
+  <meta name="description" content="Case study: a Google Sheets workspace with a sidebar that turns slow, inconsistent review handling into a fast, tracked workflow." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2315171B'/%3E%3Crect x='20' y='20' width='16' height='16' fill='%23389AC4'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../assets/js/main.js" defer></script>
+  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a class="nav__brand" href="../index.html#top">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="word">Joshua Romero</span>
+        <span class="word-short">JR</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header class="study-hero">
+      <div class="container">
+        <a class="study-back" href="../index.html#work"><span class="arrow">←</span> All work</a>
+
+        <div class="study-hero__grid">
+          <div class="study-hero__main" data-reveal>
+            <p class="caption" style="margin:0 0 14px">Case study · AI &amp; Automation</p>
+            <h1 class="study-title">Review Hunter System</h1>
+            <p class="study-sum">
+              A Google Sheets workspace with a sidebar that turns slow,
+              inconsistent review handling into a fast, tracked workflow.
+            </p>
+          </div>
+          <div class="study-hero__side" data-reveal style="--rd:80ms">
+            <ul class="study-facts">
+              <li><span class="k">Role</span><span class="v">Design &amp; build, from scratch</span></li>
+              <li><span class="k">Type</span><span class="v">Internal operational tool</span></li>
+              <li><span class="k">Stack</span><span class="v">Apps Script · HTML/CSS/JS · AI-assisted</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-hero__shot" data-reveal>
+          <figure class="shot">
+            <img src="../review-hunter.jpg" alt="Review Hunter System sidebar interface" />
+            <figcaption class="shot__cap">
+              <span>review-hunter.jpg</span>
+              <span>the sidebar, main view</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <div class="study-body">
+      <div class="container">
+        <section class="study-block">
+          <div class="study-block__label" data-reveal>The problem</div>
+          <div class="study-block__content" data-reveal style="--rd:60ms">
+            <h2>Handled slowly, and inconsistently.</h2>
+            <p>
+              Customer feedback that needed a response went through a manual loop:
+              read it, decide what to do, write a response, log the outcome. There
+              was no single place to see which cases had been handled and which
+              were still waiting.
+            </p>
+            <p>
+              The process wasn't broken in one obvious place. It was eroded
+              everywhere, a little: no queue, no consistent format, no record.
+            </p>
+          </div>
+        </section>
+
+        <section class="study-block">
+          <div class="study-block__label" data-reveal>The approach</div>
+          <div class="study-block__content" data-reveal style="--rd:60ms">
+            <h2>One workspace, three moves.</h2>
+            <p>
+              The system is a Google Sheets workspace with a custom sidebar.
+              The sheet holds the state; the sidebar does the work.
+            </p>
+            <ul>
+              <li><strong>Fetch.</strong> The latest feedback is pulled into a work queue automatically.</li>
+              <li><strong>Draft.</strong> Each item gets a response grounded in what the customer actually wrote.</li>
+              <li><strong>Track.</strong> Every case carries a status, so handling is visible at a glance.</li>
+            </ul>
+            <p>
+              It runs where the team already works, inside Sheets. No new apps,
+              no new logins, no training session required.
+            </p>
+          </div>
+        </section>
+
+        <section class="study-block">
+          <div class="study-block__label" data-reveal>The build</div>
+          <div class="study-block__content" data-reveal style="--rd:60ms">
+            <h2>How it was built</h2>
+            <ul>
+              <li>A custom sidebar interface inside Google Sheets, written in HTML, CSS, and JavaScript.</li>
+              <li>Automated retrieval that feeds a structured work queue.</li>
+              <li>Response drafting that uses the content of each review.</li>
+              <li>Status tracking with a visible record of every case.</li>
+              <li>Everything on Google Apps Script: zero infrastructure, zero new tools.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="study-block">
+          <div class="study-block__label" data-reveal>The outcome</div>
+          <div class="study-block__content" data-reveal style="--rd:60ms">
+            <div class="study-result">
+              <span class="k">What changed</span>
+              <p>
+                Reviews get handled faster and consistently, with a record of every
+                one. The queue is visible, the responses are grounded in the
+                feedback, and nothing waits silently.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Next study -->
+        <section class="study-next" data-reveal>
+          <figure class="shot">
+            <img src="../sourcing-system.jpg" alt="Sourcing and Pre-Canvassing System sidebar interface" loading="lazy" />
+          </figure>
+          <p class="study-next__title">
+            Next case study
+            <span>Sourcing &amp; Pre-Canvassing System</span>
+          </p>
+          <a class="link" href="sourcing-system.html">Read it <span class="arrow">→</span></a>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-band" data-reveal>
+          <h2>Have a process that should run itself?</h2>
+          <p>That is the whole job: find the friction, build the fix, hand back the time.</p>
+          <a class="btn btn--light" href="mailto:joshuaromerova@gmail.com?subject=Project%20inquiry%20—%20Joshua%20Romero">Let's Work Together <span class="arrow">→</span></a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__secondary">
+        <span>© <span data-year>2026</span> Joshua Romero — AI &amp; Automation Specialist</span>
+        <span class="footer__motif">Makati, Philippines</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "joshua-romero-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Joshua Romero — AI & Automation Specialist. Static portfolio built with HTML, CSS and vanilla JS.",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "node build.js"
+  }
+}
