@@ -1,85 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joshua Romero — AI & Automation Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua Romero — AI &amp; Automation Specialist</title>
+  <meta name="description" content="Joshua Romero is an AI & automation specialist and technical problem solver. He uses AI, automation, and practical systems to solve real-world problems and build useful things." />
+  <meta property="og:title" content="Joshua Romero — AI & Automation Specialist" />
+  <meta property="og:description" content="I find problems, trace how the process works, and build the system that removes the work." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2315171B'/%3E%3Crect x='20' y='20' width='16' height='16' fill='%23389AC4'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="assets/js/main.js" defer></script>
+  <noscript><style>[data-reveal]{opacity:1;transform:none} .hero__head-line{clip-path:inset(0 0 0 0);animation:none;transform:none} .hero__foot{opacity:1;animation:none}</style></noscript>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Joshua Romero</h1>
-            <p class="subhead">AI &amp; Automation Specialist · Process Builder</p>
-            <p class="tagline">I build tools that turn repetitive work into one-click operations.</p>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="word">Joshua Romero</span>
+        <span class="word-short">JR</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- ==================== HERO ==================== -->
+    <header class="hero" data-section="hero">
+      <div class="container">
+        <h1 class="hero__head">
+          <span class="hero__head-line">Joshua</span>
+          <span class="hero__head-line hero__head-line--i1">Romero<span class="dot">.</span></span>
+        </h1>
+        <p class="hero__role"><span class="mark" aria-hidden="true"></span>AI &amp; Automation Specialist</p>
+        <p class="hero__statement-head">I build systems that remove friction.</p>
+        <div class="hero__foot">
+          <div class="hero__intro">
+            <p class="hero__statement">
+              I find problems, trace how the process actually works, and build
+              the smallest system that removes the work. AI and automation where
+              they fit; plain engineering where they don't.
+            </p>
+          </div>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contact">Let's Work Together <span class="arrow">→</span></a>
+          </div>
         </div>
+      </div>
+      <span class="hero__scroll" aria-hidden="true">scroll</span>
+      <div class="hero__meta container" data-reveal>
+        <span>Makati, Philippines · GMT+8</span>
+        <a href="mailto:joshuaromerova@gmail.com">joshuaromerova@gmail.com</a>
+        <a href="JOSHUA_ROMERO_RESUME.pdf" download>Download resume (PDF)</a>
+      </div>
     </header>
 
-    <!-- Resume download button -->
-    <p style="text-align:center; margin:16px 0 10px;">
-        <a href="JOSHUA_ROMERO_RESUME.pdf" download style="
-            display:inline-block;
-            background:#eef2f6;
-            color:#0d1b2a;
-            padding:8px 24px;
-            border-radius:20px;
-            font-weight:500;
-            text-decoration:none;
-            font-size:0.9rem;
-            border:1px solid #d1d5db;
-            transition: background 0.2s ease, border-color 0.2s ease;
-        ">⬇ Download Resume (PDF)</a>
-    </p>
+    <!-- ==================== PROCESS — typographic scroll sequence ==================== -->
+    <section class="process-experience" aria-label="How I work">
+      <div class="process-scroll">
+        <div class="process-sticky">
+          <span class="process-annotation process-annotation--l" aria-hidden="true">one system,<br />four states</span>
+          <span class="process-annotation process-annotation--r" aria-hidden="true">scroll ↓</span>
 
-    <section class="projects container">
-        <h2>Automation Projects</h2>
-        <p class="section-intro">Each project was built from scratch to solve a specific operational bottleneck.</p>
+          <div class="process-core">
+            <p class="process-eyebrow">How I work</p>
+            <h2 class="process-stage" aria-live="polite">Problem</h2>
 
-        <div class="project-grid">
-            <!-- Review Hunter -->
-            <div class="project-card">
-                <img src="review-hunter.jpg" alt="Review Hunter System sidebar" style="width:100%; border-radius:8px; margin-bottom:14px;">
-                <h3>Review Hunter System</h3>
-                <p>Google Sheets + sidebar automation that fetches 1–2 star reviews, generates phone scripts, and tracks resolutions. Cut review processing time from 15 min to 1 min per review.</p>
-                <span class="tech">Google Apps Script · HTML · CSS · JavaScript</span>
+            <div class="process-track" role="presentation">
+              <span class="process-track__line"></span>
+              <span class="process-track__fill"></span>
+              <ul class="process-nodes">
+                <li class="pnode" data-state="active"><span class="pnode__tick"></span><span class="pnode__label">Problem</span></li>
+                <li class="pnode"><span class="pnode__tick"></span><span class="pnode__label">Analyze</span></li>
+                <li class="pnode"><span class="pnode__tick"></span><span class="pnode__label">Automate</span></li>
+                <li class="pnode"><span class="pnode__tick"></span><span class="pnode__label">Result</span></li>
+              </ul>
             </div>
 
-            <!-- Sourcing System -->
-            <div class="project-card">
-                <img src="sourcing-system.jpg" alt="Sourcing System sidebar interface" style="width:100%; border-radius:8px; margin-bottom:14px;">
-                <h3>Sourcing &amp; Pre‑Canvassing System</h3>
-                <p>Sidebar tool for yards and eBay suppliers. Saves seller details by H#, tracks budget, copies ready-to-paste CRM notes, and marks purchases with color coding.</p>
-                <span class="tech">Google Apps Script · Sidebar UI · Header Mapping</span>
-            </div>
-
-            <!-- Resale Cert Helper -->
-            <div class="project-card">
-                <img src="resale-helper-shopname.jpg" alt="Resale Cert Helper - Shop Name auto-fill" style="width:100%; border-radius:8px; margin-bottom:14px;">
-                <img src="resale-helper-zip.jpg" alt="Resale Cert Helper - Zip copied confirmation" style="width:100%; border-radius:8px; margin-bottom:14px;">
-                <h3>Resale Cert CRM Helper</h3>
-                <p>Chrome extension that auto-fills Shop Name and copies Mailing Zip on AlphaCRM.org. Saves 5–10 seconds per customer page — adds up to hours over a campaign.</p>
-                <span class="tech">Chrome Extension · JavaScript · DOM Manipulation</span>
-            </div>
+            <p class="process-caption" aria-hidden="true">The work is repetitive and scattered across tools.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section class="skills container">
-        <h2>Skills</h2>
-        <ul class="skill-list">
-            <li>Google Apps Script</li>
-            <li>Chrome Extensions</li>
-            <li>JavaScript / HTML / CSS</li>
-            <li>Process Automation</li>
-            <li>AI Tooling (ChatGPT, Claude, Gemini)</li>
-            <li>Obsidian · macOS Shortcuts</li>
-        </ul>
+    <!-- ==================== 01 — WHAT I DO ==================== -->
+    <section class="section" id="capabilities" aria-labelledby="caps-title" data-section="caps">
+      <span class="ghost" aria-hidden="true">01</span>
+      <div class="container">
+        <div class="sec-head sec-head--stack" data-reveal>
+          <div class="sec-head__main">
+            <h2 class="sec-title sec-title--md" id="caps-title">What I do.</h2>
+          </div>
+          <p class="sec-head__side">
+            Six ways I've been useful lately. Each one is attached to a build
+            you can read, so the claims stay honest.
+          </p>
+        </div>
+
+        <div class="cap-index">
+          <div class="cap-row" data-reveal>
+            <h3 class="cap-row__name">AI &amp; Automation</h3>
+            <p class="cap-row__desc">Language-model tooling inside real workflows: drafting, deciding, executing where it saves time.</p>
+            <a class="cap-row__proof link link--accent" href="projects/review-hunter.html">Review Hunter <span class="arrow">→</span></a>
+          </div>
+          <div class="cap-row" data-reveal>
+            <h3 class="cap-row__name">Workflow Design</h3>
+            <p class="cap-row__desc">Process mapping end to end, then rebuilding the parts that leak time.</p>
+            <a class="cap-row__proof link link--accent" href="projects/sourcing-system.html">Sourcing System <span class="arrow">→</span></a>
+          </div>
+          <div class="cap-row" data-reveal>
+            <h3 class="cap-row__name">Process Improvement</h3>
+            <p class="cap-row__desc">Changes measured before and after, so a fix is a fix and not a feeling.</p>
+            <a class="cap-row__proof link link--accent" href="projects/review-hunter.html">Review Hunter <span class="arrow">→</span></a>
+          </div>
+          <div class="cap-row" data-reveal>
+            <h3 class="cap-row__name">Technical Problem Solving</h3>
+            <p class="cap-row__desc">Making third-party tools do what the business needs, within their constraints.</p>
+            <a class="cap-row__proof link link--accent" href="projects/resale-cert-helper.html">Resale Cert Helper <span class="arrow">→</span></a>
+          </div>
+          <div class="cap-row" data-reveal>
+            <h3 class="cap-row__name">CRM &amp; Systems</h3>
+            <p class="cap-row__desc">Customer records that stay consistent: entry, notes, and handoff without busywork.</p>
+            <a class="cap-row__proof link link--accent" href="projects/resale-cert-helper.html">Resale Cert Helper <span class="arrow">→</span></a>
+          </div>
+          <div class="cap-row" data-reveal>
+            <h3 class="cap-row__name">E-commerce</h3>
+            <p class="cap-row__desc">Sourcing, tracking, and resale tooling that keeps up with the pace of the work.</p>
+            <a class="cap-row__proof link link--accent" href="projects/sourcing-system.html">Sourcing System <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <p class="cap-foot" data-reveal>
+          Also: web development. This site is hand-built HTML, CSS, and JavaScript,
+          with no frameworks. <a href="#work">See the work below ↓</a>
+        </p>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>joshuaromerova@gmail.com · <span class="location">Makati, Philippines</span></p>
-            <p class="footer-note">Built to show — not just talk.</p>
+    <!-- ==================== 02 — SELECTED WORK ==================== -->
+    <section class="work section" id="work" data-nav-dark data-section="work" aria-labelledby="work-title">
+      <span class="ghost ghost--left ghost--dark" aria-hidden="true">02</span>
+      <div class="container">
+        <div class="sec-head sec-head--light" data-reveal>
+          <div class="sec-head__main">
+            <h2 class="sec-title sec-title--lg sec-title--light" id="work-title">Selected work.</h2>
+          </div>
+          <p class="sec-head__side">
+            Three builds, each one solving a real operational problem.
+            The first is the most complete; read it first.
+          </p>
         </div>
-    </footer>
+
+        <!-- Featured — Review Hunter -->
+        <article class="feature" data-reveal>
+          <div class="feature__media" data-parallax="50">
+            <figure class="shot">
+              <img src="review-hunter.jpg" alt="Review Hunter System sidebar interface" />
+              <figcaption class="shot__cap">
+                <span>review-hunter.jpg</span>
+                <span>Google Apps Script · HTML/CSS/JS · AI-assisted</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="feature__body">
+            <span class="feature__index"><b>featured case study</b></span>
+            <h3 class="feature__title">Review Hunter System</h3>
+            <p class="feature__sum">
+              A Google Sheets workspace with a sidebar that turns slow,
+              inconsistent review handling into a fast, tracked workflow.
+            </p>
+            <div class="kv">
+              <div class="kv__row">
+                <span class="kv__k">Problem</span>
+                <span class="kv__v">Customer feedback that needed a response was handled slowly and inconsistently, with no single place to track what had been done.</span>
+              </div>
+              <div class="kv__row">
+                <span class="kv__k">Approach</span>
+                <span class="kv__v">A sidebar that pulls in the latest feedback, drafts a response grounded in what the customer wrote, and tracks each case to resolution.</span>
+              </div>
+              <div class="kv__row">
+                <span class="kv__k">Result</span>
+                <span class="kv__v">Reviews get handled faster and consistently, with a record of every one.</span>
+              </div>
+            </div>
+            <a class="link link--dark" href="projects/review-hunter.html">View case study <span class="arrow">→</span></a>
+          </div>
+        </article>
+
+        <!-- Sourcing System -->
+        <article class="band" data-reveal="left">
+          <div class="band__media" data-parallax="30">
+            <figure class="shot">
+              <img src="sourcing-system.jpg" alt="Sourcing and Pre-Canvassing System sidebar interface" loading="lazy" />
+              <figcaption class="shot__cap">
+                <span>sourcing-system.jpg</span>
+                <span>Google Apps Script · Sidebar UI</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="band__body">
+            <span class="band__index">workflow design · e-commerce</span>
+            <h3 class="band__title">Sourcing &amp; Pre-Canvassing System</h3>
+            <p class="band__para">
+              Supplier sourcing ran on a spreadsheet that had grown without rules.
+              A sidebar tool now standardizes seller records, tracks spending, and
+              generates ready-to-paste CRM notes.
+            </p>
+            <p class="band__stack">Apps Script · Sheet integration · CRM handoff</p>
+            <a class="link link--dark" href="projects/sourcing-system.html">View case study <span class="arrow">→</span></a>
+          </div>
+        </article>
+
+        <!-- Resale Cert Helper -->
+        <article class="band band--rev" data-reveal="right">
+          <div class="band__body">
+            <span class="band__index">technical problem solving · CRM</span>
+            <h3 class="band__title">Resale Cert CRM Helper</h3>
+            <p class="band__para">
+              Every customer page in the resale CRM needed the same fields entered
+              by hand. A Chrome extension now handles those steps automatically,
+              so the page work is done instead of done twice.
+            </p>
+            <p class="band__stack">Chrome extension · DOM manipulation</p>
+            <a class="link link--dark" href="projects/resale-cert-helper.html">View case study <span class="arrow">→</span></a>
+          </div>
+          <div class="band__media" data-parallax="30">
+            <figure class="shot">
+              <img src="resale-helper-shopname.jpg" alt="Resale Cert CRM Helper auto-filling a form field" loading="lazy" />
+              <figcaption class="shot__cap">
+                <span>resale-helper.jpg</span>
+                <span>Chrome extension · JavaScript</span>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <div class="work__cta" data-reveal>
+          <p>Have a process that should run itself?</p>
+          <a class="btn btn--light" href="#contact">Let's Work Together <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 03 — HOW I GOT HERE ==================== -->
+    <section class="section" id="journey" aria-labelledby="journey-title" data-section="journey">
+      <span class="ghost" aria-hidden="true">03</span>
+      <div class="container">
+        <div class="sec-head" data-reveal>
+          <div class="sec-head__main">
+            <h2 class="sec-title sec-title--md" id="journey-title">How I got here.</h2>
+          </div>
+          <p class="sec-head__side">
+            The short version, in four movements. No dates and no job titles;
+            just the path from reading circuits to building automation.
+          </p>
+        </div>
+
+        <div class="journey-grid">
+          <div class="jstep" data-reveal>
+            <h3 class="jstep__title">Groundwork</h3>
+            <p class="jstep__desc">Electronics engineering taught me to read systems: trace the failure, fix the root cause, not the symptom.</p>
+          </div>
+          <div class="jstep" data-reveal style="--rd:70ms">
+            <h3 class="jstep__title">Operations</h3>
+            <p class="jstep__desc">Time inside real business operations, where CRM data, sales workflows, and e-commerce supply create friction by default.</p>
+          </div>
+          <div class="jstep" data-reveal style="--rd:140ms">
+            <h3 class="jstep__title">Automation</h3>
+            <p class="jstep__desc">Building the fixes: sidebar tools, browser extensions, and scripts that remove manual steps from daily work.</p>
+          </div>
+          <div class="jstep" data-reveal style="--rd:210ms">
+            <h3 class="jstep__title">AI</h3>
+            <p class="jstep__desc">Now building with AI: agents and generative tooling that don't just run a process, they decide inside it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 04 — CERTIFICATIONS ==================== -->
+    <section class="creds section--tight" id="credentials" data-nav-dark data-section="credentials" aria-labelledby="creds-title">
+      <span class="ghost ghost--left ghost--dark" aria-hidden="true">04</span>
+      <div class="container">
+        <div class="sec-head sec-head--light" data-reveal>
+          <div class="sec-head__main">
+            <h2 class="sec-title sec-title--sm sec-title--light" id="creds-title">Certifications, in order.</h2>
+          </div>
+          <p class="sec-head__side">
+            Four Zapier certifications as a single progression.
+            Learn it, apply it, build with it.
+          </p>
+        </div>
+
+        <div class="cred-path" data-reveal>
+          <span class="cred-path__line" aria-hidden="true"></span>
+          <span class="cred-path__marker" aria-hidden="true"></span>
+          <span class="cred-path__marker" aria-hidden="true"></span>
+          <span class="cred-path__marker" aria-hidden="true"></span>
+          <span class="cred-path__marker cred-path__marker--current" aria-hidden="true"></span>
+
+          <div class="cred-stages">
+            <div class="cred-cell">
+              <h3 class="cred-cell__name">Jumpstart by Zapier</h3>
+              <p class="cred-cell__desc">Zapier fundamentals: triggers, actions, and a first working Zap.</p>
+              <p class="cred-cell__applied">Foundation for everything after</p>
+              <button class="cred-cell__view" type="button" data-cred="jumpstart">View credential <span class="arrow">↗</span></button>
+            </div>
+            <div class="cred-cell">
+              <h3 class="cred-cell__name">Building Basic Zaps</h3>
+              <p class="cred-cell__desc">Reliable single and multi-step Zaps with clean inputs and outputs.</p>
+              <p class="cred-cell__applied">Applied in <a href="projects/sourcing-system.html">Sourcing System</a></p>
+              <button class="cred-cell__view" type="button" data-cred="basic">View credential <span class="arrow">↗</span></button>
+            </div>
+            <div class="cred-cell">
+              <h3 class="cred-cell__name">Building Intermediate Zaps</h3>
+              <p class="cred-cell__desc">Multi-step workflows, paths, and error handling for real data.</p>
+              <p class="cred-cell__applied">Applied in <a href="projects/review-hunter.html">Review Hunter</a></p>
+              <button class="cred-cell__view" type="button" data-cred="intermediate">View credential <span class="arrow">↗</span></button>
+            </div>
+            <div class="cred-cell">
+              <h3 class="cred-cell__name">Building AI Agents</h3>
+              <p class="cred-cell__desc">AI agents that reason, decide, and take action inside workflows.</p>
+              <p class="cred-cell__applied">Applied in <a href="#contact">current AI work</a></p>
+              <button class="cred-cell__view" type="button" data-cred="ai_agents">View credential <span class="arrow">↗</span></button>
+            </div>
+          </div>
+        </div>
+
+        <p class="cred-note" data-reveal>
+          Certificate files plug into the view links as they are added.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== 05 — ABOUT ==================== -->
+    <section class="section" id="about" aria-labelledby="about-title" data-section="about">
+      <span class="ghost" aria-hidden="true">05</span>
+      <div class="container">
+        <div class="sec-head" data-reveal>
+          <div class="sec-head__main">
+            <h2 class="sec-title sec-title--sm" id="about-title">About.</h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-main" data-reveal>
+            <p>
+              <strong>Joshua Romero</strong> is an AI and automation specialist with an
+              <span class="hl">Electronics Engineering</span> background. He finds processes
+              that leak time and rebuilds them with AI, automation, and practical
+              technology, from CRM workflows to e-commerce operations.
+            </p>
+          </div>
+          <div class="about-side" data-reveal style="--rd:80ms">
+            <dl>
+              <div class="row"><dt>Location</dt><dd>Makati, Philippines</dd></div>
+              <div class="row"><dt>Timezone</dt><dd>GMT+8</dd></div>
+              <div class="row"><dt>Focus</dt><dd>AI · Automation · Systems</dd></div>
+              <div class="row"><dt>Tools</dt><dd>Apps Script · Zapier · Chrome Extensions · AI APIs</dd></div>
+              <div class="row"><dt>Email</dt><dd>joshuaromerova@gmail.com</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact section" id="contact" data-nav-dark data-section="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__grid">
+          <h2 class="contact__title" data-reveal>
+            <span class="line">Have something messy</span>
+            <span class="line line--indent">that could work better<span class="dot">?</span></span>
+          </h2>
+          <div class="contact__side" data-reveal style="--rd:90ms">
+            <p>
+              Describe the process and where it hurts. I'll tell you honestly
+              whether it is automatable.
+            </p>
+            <a class="btn btn--light" href="mailto:joshuaromerova@gmail.com?subject=Project%20inquiry%20—%20Joshua%20Romero">Let's Work Together <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__primary" data-reveal>
+        <a class="footer__link" href="mailto:joshuaromerova@gmail.com">joshuaromerova@gmail.com</a>
+        <span class="footer__sep" aria-hidden="true">·</span>
+        <span>Makati, Philippines</span>
+        <span class="footer__sep" aria-hidden="true">·</span>
+        <a class="footer__link" href="JOSHUA_ROMERO_RESUME.pdf" download>Download resume (PDF)</a>
+      </div>
+      <div class="footer__secondary">
+        <span>© <span data-year>2026</span> Joshua Romero — AI &amp; Automation Specialist</span>
+        <span class="footer__motif">problem <span class="accent">→</span> analyze <span class="accent">→</span> automate <span class="accent">→</span> result</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
 </body>
 </html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resale Cert CRM Helper — Joshua Romero</title>
+  <meta name="description" content="Case study: a Chrome extension that removes repetitive data entry from every customer page in the resale CRM." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2315171B'/%3E%3Crect x='20' y='20' width='16' height='16' fill='%23389AC4'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../assets/js/main.js" defer></script>
+  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a class="nav__brand" href="../index.html#top">
+        <span class="mark" aria-hidden="true"></span>
+        <span class="word">Joshua Romero</span>
+        <span class="word-short">JR</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header class="study-hero">
+      <div class="container">
+        <a class="study-back" href="../index.html#work"><span class="arrow">←</span> All work</a>
+
+        <div class="study-hero__grid">
+          <div class="study-hero__main" data-reveal>
+            <p class="caption" style="margin:0 0 14px">Case study · Technical Problem Solving · CRM</p>
+            <h1 class="study-title">Resale Cert CRM Helper</h1>
+            <p class="study-sum">
+              A Chrome extension that removes repetitive data entry from every
+              customer page in the resale CRM.
+            </p>
+          </div>
+          <div class="study-hero__side" data-reveal style="--rd:80ms">
+            <ul class="study-facts">
+              <li><span class="k">Role</span><span class="v">Design &amp; build, from scratch</span></li>
+              <li><span class="k">Type</span><span class="v">Browser extension</span></li>
+              <li><span class="k">Stack</span><span class="v">Chrome extension · JavaScript · DOM</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="study-hero__shot" data-reveal>
+          <figure class="shot">
+            <img src="../resale-helper-shopname.jpg" alt="Resale Cert CRM Helper auto-filling a form field" />
+            <figcaption class="shot__cap">
+              <span>resale-helper.jpg</span>
+              <span>field auto-filled on a customer page</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <div class="study-body">
+      <div class="container">
+        <section class="study-block">
+          <div class="study-block__label" data-reveal>The problem</div>
+          <div class="study-block__content" data-reveal style="--rd:60ms">
+            <h2>The same fields, every page, by hand.</h2>
+            <p>
+              Every customer page in the resale CRM required the same steps: fill
+              in the known fields, copy the data needed for the next form. Small
+              amounts of time per page, repeated constantly through the day.
+            </p>
+            <p>
+              Individually each step is nothing. Collectively it's work that adds
+              no value, the kind that hides in plain sight because it's always
+              been there.
+            </p>
+          </div>
+        </section>
+
+        <section class="study-block">
+          <div class="study-block__label" data-reveal>The approach</div>
+          <div class="study-block__content" data-reveal style="--rd:60ms">
+            <h2>A small tool for a small, expensive task.</h2>
+            <p>
+              A Chrome extension that watches the customer page and handles the
+              repetitive steps automatically: known fields get filled, and the
+              data needed next is copied to the clipboard.
+            </p>
+            <p>
+              Plain JavaScript and DOM-aware field detection, nothing else.
+              Lightweight by design, because a tool that slows the page down
+              would be a different kind of waste.
+            </p>
+          </div>
+        </section>
+
+        <section class="study-block">
+          <div class="study-block__label" data-reveal>The build</div>
+          <div class="study-block__content" data-reveal style="--rd:60ms">
+            <h2>How it was built</h2>
+            <ul>
+              <li>A Chrome extension in plain JavaScript, no dependencies.</li>
+              <li>DOM-aware field detection instead of fragile hardcoding.</li>
+              <li>Auto-fill and clipboard copy, one less manual step per page.</li>
+              <li>Quiet by design: no UI clutter, no popups.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="study-block">
+          <div class="study-block__label" data-reveal>The outcome</div>
+          <div class="study-block__content" data-reveal style="--rd:60ms">
+            <div class="study-result">
+              <span class="k">What changed</span>
+              <p>
+                Less typing and fewer mistakes. The page work happens
+                automatically, so the person moves on to the next customer.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="study-gallery">
+          <figure data-reveal>
+            <div class="shot">
+              <img src="../resale-helper-shopname.jpg" alt="Shop Name field auto-filled by the extension" loading="lazy" />
+              <figcaption class="shot__cap">
+                <span>resale-helper-shopname.jpg</span>
+                <span>auto-fill</span>
+              </figcaption>
+            </div>
+          </figure>
+          <figure data-reveal style="--rd:80ms">
+            <div class="shot">
+              <img src="../resale-helper-zip.jpg" alt="Mailing Zip copied by the extension" loading="lazy" />
+              <figcaption class="shot__cap">
+                <span>resale-helper-zip.jpg</span>
+                <span>clipboard copy</span>
+              </figcaption>
+            </div>
+          </figure>
+        </section>
+
+        <!-- Next study -->
+        <section class="study-next" data-reveal>
+          <figure class="shot">
+            <img src="../review-hunter.jpg" alt="Review Hunter System sidebar interface" loading="lazy" />
+          </figure>
+          <p class="study-next__title">
+            Next case study
+            <span>Review Hunter System</span>
+          </p>
+          <a class="link" href="review-hunter.html">Read it <span class="arrow">→</span></a>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-band" data-reveal>
+          <h2>Repetitive? Boring? Automatable?</h2>
+          <p>If it feels like a robot's job, it probably is one.</p>
+          <a class="btn btn--light" href="mailto:joshuaromerova@gmail.com?subject=Project%20inquiry%20—%20Joshua%20Romero">Let's Work Together <span class="arrow">→</span></a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__secondary">
+        <span>© <span data-year>2026</span> Joshua Romero — AI &amp; Automation Specialist</span>
+        <span class="footer__motif">Makati, Philippines</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
